@@ -1,4 +1,40 @@
-/* OPERADOR ARITMETICO SUMA */
+/* OPERADOR ARITMETICO RESTA */
+let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
+let num2 = new Number (prompt("Ingrese otro Número:", "Digite un número"));
+let resul;
+let myStyle1 = `
+color:#E74C3C;
+background:#F9E79F;
+padding: 5px;
+border-radius: 5px;`;
+
+// SUMA
+console.group(`%cOperador Aritmetico Resta`,myStyle1);
+
+      console.log (`
+          Variable num1: ${num1}, 
+          Variable num2: ${num2}, 
+          Variable resultado: ${resul}`);
+      
+      console.log(`Restar Variables num1 - num2 y guardar la respuesta en la variable Resultado \n`)
+      resul= num1-num2
+      console.log(`
+          num1:${num1}, 
+          num2:${num2}, 
+          resultado: ${resul}`
+          )
+  // Suma Abreviada
+      console.log(`Resta Abreviada: num1 -= num2;`)
+      num1 -= num2;
+      console.log (`
+          num1:${num1} 
+          num2:${num2}
+          resultado:${resul}` 
+          );
+  
+  console.groupEnd();
+
+/* OPERADOR ARITMETICO SUMA 
   let sum1 = new Number (prompt("Ingrese un Número", "Digite un número"));
   let sum2 = new Number (prompt("Ingrese otro Número", "Digite un número"));
   let resul;
@@ -31,7 +67,7 @@
             sum2:${sum2}` 
             );
     
-    console.groupEnd();
+    console.groupEnd(); */
 
 /* OPERADOR DE ADICION  
   let a = null;
