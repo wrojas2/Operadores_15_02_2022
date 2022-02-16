@@ -1,3 +1,38 @@
+/* OPERADOR ARITMETICO SUMA */
+  let sum1 = new Number (prompt("Ingrese un Número", "Digite un número"));
+  let sum2 = new Number (prompt("Ingrese otro Número", "Digite un número"));
+  let resul;
+  let myStyle1 = `
+  color:#EAECEE;
+  background:#A569BD;
+  padding: 5px;
+  border-radius: 5px;`;
+  
+  // SUMA
+  console.group(`%cOperador Aritmetico Suma`,myStyle1);
+
+        console.log (`
+            Variable sum1: ${sum1}, 
+            Variable sum2: ${sum2}, 
+            Variable resultado: ${resul}`);
+        
+        console.log(`Sumar Variables Sum1 + sum2 y guardarla en variable Resultado \n`)
+        resul= sum1+sum2
+        console.log(`
+            sum1:${sum1}, 
+            sum2:${sum2}, 
+            resultado: ${resul}`
+            )
+    // Suma Abreviada
+        console.log(`Suma Abreviada: sum1 += sum2;`)
+        sum1 += sum2;
+        console.log (`
+            sum1:${sum1} 
+            sum2:${sum2}` 
+            );
+    
+    console.groupEnd();
+
 /* OPERADOR DE ADICION  
   let a = null;
   let b = new Number (prompt("Ingrese Datos", "Digite un dato"));
@@ -44,10 +79,10 @@ console.group(`%cOperadores Asignacion`,myStyle);
     
     x = y 
 
-    console.log (`x:${x} y: ${y}` );*/
+    console.log (`x:${x} y: ${y}` );
 
 
-console.groupEnd(); 
+console.groupEnd(); */
 
 /* VENTANA EMERGENTE EN JS
 let nombre = prompt(`Ingrese El Nombre Del Usuario:`, `Escriba su nombre completo`);
