@@ -1,4 +1,32 @@
-/* OPERADOR ARITMETICO INCREMENTO */
+/* OPERADOR ARITMETICO DECREMENTO */ 
+
+let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
+let resul;
+let myStyle1 = `
+color:#4D5656 ;
+background:#F4ECF7;
+padding: 25px;
+border-radius: 25px;`;
+
+// INCREMENTO
+console.group(`%cOperador Aritmetico Decremento`,myStyle1);
+
+      console.log (`
+          Variable num1: ${num1}, 
+          Variable resultado: ${resul}
+                 `);
+      
+      console.log(`Reducir en un numero el valor de:${num1} y guardar la respuesta en resultado \n`)
+      num1--
+      resul = num1
+      console.log(`
+          num1:${num1}, 
+          resultado:${resul}
+          ` )
+  
+  console.groupEnd(); 
+
+/* OPERADOR ARITMETICO INCREMENTO 
 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
 let resul;
@@ -24,7 +52,7 @@ console.group(`%cOperador Aritmetico Incremento`,myStyle1);
           resultado:${resul}
           ` )
   
-  console.groupEnd(); 
+  console.groupEnd(); */
 
 /* OPERADOR ARITMETICO EXPONENCIACION 
 
