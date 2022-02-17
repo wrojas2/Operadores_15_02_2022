@@ -1,4 +1,40 @@
-/* OPERADOR ARITMETICO MULTIPLICACION */
+/* OPERADOR ARITMETICO DIVISION */
+let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
+let num2 = new Number (prompt("Ingrese otro Número:", "Digite un número"));
+let resul;
+let myStyle1 = `
+color:#E8DAEF;
+background:#797D7F;
+padding: 50px;
+border-radius: 15px;`;
+
+// SUMA
+console.group(`%cOperador Aritmetico División`,myStyle1);
+
+      console.log (`
+          Variable num1: ${num1}, 
+          Variable num2: ${num2}, 
+          Variable resultado: ${resul}`);
+      
+      console.log(`Dividir la Variables num1 entre num2 y guardar la respuesta en la variable Resultado \n`)
+      resul= num1/num2
+      console.log(`
+          num1:${num1}, 
+          num2:${num2}, 
+          resultado: ${resul}`
+          )
+  // Suma Abreviada
+      console.log(`División Abreviada: num1 /= num2;`)
+      num1 /= num2;
+      console.log (`
+          num1:${num1} 
+          num2:${num2}
+          resultado:${resul}` 
+          );
+  
+  console.groupEnd();
+
+/* OPERADOR ARITMETICO MULTIPLICACION 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
 let num2 = new Number (prompt("Ingrese otro Número:", "Digite un número"));
 let resul;
@@ -32,7 +68,7 @@ console.group(`%cOperador Aritmetico Multiplicación`,myStyle1);
           resultado:${resul}` 
           );
   
-  console.groupEnd();
+  console.groupEnd(); */
 
 /* OPERADOR ARITMETICO RESTA 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
