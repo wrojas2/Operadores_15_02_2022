@@ -1,4 +1,41 @@
-/* OPERADOR ARITMETICO DIVISION */
+/* OPERADOR ARITMETICO EXPONENCIACION */
+
+let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
+let num2 = new Number (prompt("Ingrese otro Número:", "Digite un número"));
+let resul;
+let myStyle1 = `
+color:#4A235A;
+background:#D68910;
+padding: 10px;
+border-radius: 15px;`;
+
+// SUMA
+console.group(`%cOperador Aritmetico Exponenciación`,myStyle1);
+
+      console.log (`
+          Variable num1: ${num1}, 
+          Variable num2: ${num2}, 
+          Variable resultado: ${resul}`);
+      
+      console.log(`Elevar ${num1} a la ${num2} potencia, num1^mun2, la respuesta se guarda en la variable Resultado \n`)
+      resul= num1**num2
+      console.log(`
+          num1:${num1}, 
+          num2:${num2}, 
+          resultado: ${resul}`
+          )
+  // Suma Abreviada
+      console.log(`Exponenciación Abreviada: num1 **= num2;`)
+      num1 **= num2;
+      console.log (`
+          num1:${num1} 
+          num2:${num2}
+          resultado:${resul}` 
+          );
+  
+  console.groupEnd(); 
+
+/* OPERADOR ARITMETICO DIVISION 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
 let num2 = new Number (prompt("Ingrese otro Número:", "Digite un número"));
 let resul;
@@ -32,7 +69,7 @@ console.group(`%cOperador Aritmetico División`,myStyle1);
           resultado:${resul}` 
           );
   
-  console.groupEnd();
+  console.groupEnd(); */
 
 /* OPERADOR ARITMETICO MULTIPLICACION 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
