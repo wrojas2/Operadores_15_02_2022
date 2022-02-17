@@ -1,4 +1,32 @@
-/* OPERADOR ARITMETICO EXPONENCIACION */
+/* OPERADOR ARITMETICO INCREMENTO */
+
+let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
+let resul;
+let myStyle1 = `
+color:#1B4F72;
+background:#B3B6B7;
+padding: 10px;
+border-radius: 25px;`;
+
+// INCREMENTO
+console.group(`%cOperador Aritmetico Incremento`,myStyle1);
+
+      console.log (`
+          Variable num1: ${num1}, 
+          Variable resultado: ${resul}
+                 `);
+      
+      console.log(`Incrementar en un numero el valor de: ${num1} y guardar la respuesta en resultado \n`)
+      num1++
+      resul = num1
+      console.log(`
+          num1:${num1}, 
+          resultado:${resul}
+          ` )
+  
+  console.groupEnd(); 
+
+/* OPERADOR ARITMETICO EXPONENCIACION 
 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
 let num2 = new Number (prompt("Ingrese otro Número:", "Digite un número"));
@@ -24,7 +52,7 @@ console.group(`%cOperador Aritmetico Exponenciación`,myStyle1);
           num2:${num2}, 
           resultado: ${resul}`
           )
-  // Suma Abreviada
+  // Exponenciación Abreviada
       console.log(`Exponenciación Abreviada: num1 **= num2;`)
       num1 **= num2;
       console.log (`
@@ -33,7 +61,7 @@ console.group(`%cOperador Aritmetico Exponenciación`,myStyle1);
           resultado:${resul}` 
           );
   
-  console.groupEnd(); 
+  console.groupEnd(); */
 
 /* OPERADOR ARITMETICO DIVISION 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
@@ -45,7 +73,7 @@ background:#797D7F;
 padding: 50px;
 border-radius: 15px;`;
 
-// SUMA
+// DIVISION
 console.group(`%cOperador Aritmetico División`,myStyle1);
 
       console.log (`
@@ -60,7 +88,7 @@ console.group(`%cOperador Aritmetico División`,myStyle1);
           num2:${num2}, 
           resultado: ${resul}`
           )
-  // Suma Abreviada
+  // DIVISION Abreviada
       console.log(`División Abreviada: num1 /= num2;`)
       num1 /= num2;
       console.log (`
@@ -81,7 +109,7 @@ background:#27AE60;
 padding: 5px;
 border-radius: 5px;`;
 
-// SUMA
+// MULTIPLICACION
 console.group(`%cOperador Aritmetico Multiplicación`,myStyle1);
 
       console.log (`
@@ -96,7 +124,7 @@ console.group(`%cOperador Aritmetico Multiplicación`,myStyle1);
           num2:${num2}, 
           resultado: ${resul}`
           )
-  // Suma Abreviada
+  // Multiplicación Abreviada
       console.log(`Multiplicacion Abreviada: num1 *= num2;`)
       num1 *= num2;
       console.log (`
@@ -117,7 +145,7 @@ background:#F9E79F;
 padding: 5px;
 border-radius: 5px;`;
 
-// SUMA
+// RESTA
 console.group(`%cOperador Aritmetico Resta`,myStyle1);
 
       console.log (`
@@ -132,7 +160,7 @@ console.group(`%cOperador Aritmetico Resta`,myStyle1);
           num2:${num2}, 
           resultado: ${resul}`
           )
-  // Suma Abreviada
+  // Resta Abreviada
       console.log(`Resta Abreviada: num1 -= num2;`)
       num1 -= num2;
       console.log (`
