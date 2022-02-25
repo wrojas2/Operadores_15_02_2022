@@ -1,4 +1,42 @@
-/* OPERADOR DE COMPARACION MAYOR */
+/* OPERADOR DE COMPARACION MENOR */
+let myStyle1 = `
+color:#F2F3F4;
+background:#2471A3;
+padding: 15px;
+border-radius: 15px;`
+
+console.group(`%cOPERADOR DE COMPARACION MENOR '<'`,myStyle1);
+
+let x = 9/5+((10%8)-2*(5*5/2))/6;
+// 9/5 + ((2)-2*(5*5/2))/6;
+// 9/5 + ( 2-2 * (25/2))/6;
+// 9/5 + ( 2-2 *(12,5))/6;
+// 9/5 + ( 2- 2 * 12,5 )/6;
+// 9/5 + ( 2- 25 ) /6;
+// 9/5 + (-23)/6;
+// 1,8 + (-3.8333)
+// 1,8 - 3,8333
+
+// RTA X => -2.033
+let y = (8*5/(5+2)*3)%9;
+// (8*5/(7)*3)%9;
+// (8*5/7*3)%9;
+// (40/7*3)%9;
+// (5.714*3)%9;
+// (17,142)%9;
+//  RTA Y => 8,1428
+let resultado = x > y;
+
+console.log(`x = 9/5+((10%8)-2*(5*5/2))/6`)
+console.log(`y = (8*5/(5+2)*3)%9`)
+console.log(`
+    El valor de la Variable x: ${x}  
+    El Valor de la variable y: ${y} 
+    '>', ¿X es menor que y ?  ${resultado}`);
+
+console.groupEnd();
+
+/* OPERADOR DE COMPARACION MAYOR 
 let myStyle1 = `
 color:#F2F3F4;
 background:#F0B27A;
@@ -34,7 +72,7 @@ console.log(`
     El Valor de la variable y: ${y} 
     '>', ¿X es mayor que y ?  ${resultado}`);
 
-console.groupEnd();
+console.groupEnd();*/
 
 /* OPERADOR DE COMPARACION DIFERENTE 
 let myStyle1 = `
