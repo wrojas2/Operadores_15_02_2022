@@ -1,4 +1,42 @@
-/* OPERADOR DE COMPARACION DIFERENTE */
+/* OPERADOR DE COMPARACION MAYOR */
+let myStyle1 = `
+color:#F2F3F4;
+background:#F0B27A;
+padding: 15px;
+border-radius: 15px;`
+
+console.group(`%cOPERADOR DE COMPARACION MAYOR '>'`,myStyle1);
+
+let x = 5*(15-(8-1)/9) - (5+9*9)%5;
+// 5*(15-(7)/9) - (5+9*9)%5
+// 5*(15-(0,78) - (5+9*9)%5
+// 5*(15-0,78)  - (5+81)%5
+// 5*(15-0,78)  - (86)%5
+// 5*(15-0,78)  - (1) 
+// 5*(15-0,78)  - (1)
+// 5* (14,22) - 1
+// 71.11 - 1 
+// RTA X => 70,11
+let y = (5-2 * 3)+2 * (5-1)+2;
+
+//    5- (6) + 2 * (5-1)+2
+//    (5- 6)+ 2 * (4) +2
+//      -1 + 2 * 4 + 2
+//      -1 +  8 + 2    
+//         7 + 2
+//  RTA Y => 9
+let resultado = x > y;
+
+console.log(`x = 5*(15-(8-1)/9) - (5+9*9)%5`)
+console.log(`y = (5-2 * 3)+2 * (5-1)+2`)
+console.log(`
+    El valor de la Variable x: ${x}  
+    El Valor de la variable y: ${y} 
+    '>', ¿X es mayor que y ?  ${resultado}`);
+
+console.groupEnd();
+
+/* OPERADOR DE COMPARACION DIFERENTE 
 let myStyle1 = `
 color:#F2F3F4;
 background:#A569BD;
@@ -26,7 +64,7 @@ console.log(`
     El Valor de la variable y: ${y} 
     ¿Son diferentes? '!=' ${resultado}`);
 
-console.groupEnd();
+console.groupEnd(); */
 
 /*OPERADOR DE COMPARACION IGUALDAD
 // Operador de Igualdad
