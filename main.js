@@ -1,4 +1,38 @@
-/* OPERADOR ARITMETICO DECREMENTO */ 
+/* EJERCICIO OPERACIONES   */
+let resultado;
+let myStyle1 = `
+color:#4D5656 ;
+background:#ABEBC6;
+padding: 15px;
+border-radius: 15px;`
+
+console.group(`%cTALLER JERARQUIA OPERADORES ARITMETICOS`,myStyle1);
+resultado = (4+4/5*8*7)%2;
+// 4/5 = 0,8  =>  4+0.8*8*7
+// 0.8*8 44,8 => 4+44.8
+// 4+44.8     => 48.8 % 2
+// RTA        => 0.80
+console.log(`El resultado de (4+4/5*8*7)%2 es: ${resultado}`)
+
+resultado  = 5*((4/4)*(9-7)*2)+6;
+// 4/4 = 1   => 5 * (1*(9-7)*2)+6
+// 9-7 = 2   => 5 * (1 * 2 * 2)+6
+// 1*2*2= 5  => 5 * 5 + 6
+// RTA:      => 26 
+console.log(`El resultado de 5*((4/4)*(9-7)*2)+6 es: ${resultado}`)
+resultado = 5+1*8+(9*(5+8)/2);
+// 5+8 =13    => 5+1*8+(9*13/2);
+// 13/2=6,5   => 5+1*8+(9*6,5);
+// 9*6,5=58,5 => 5+1*8+58,5
+// 1*8 = 8    => 5+8+58,5
+// Rta        =>  71,5
+console.log(`El resultado de 5+1*8+(9*(5+8)/2) es: ${resultado}`)
+
+console.groupEnd();
+
+
+
+/* OPERADOR ARITMETICO DECREMENTO 
 
 let num1 = new Number (prompt("Ingrese un Número:", "Digite un número"));
 let resul;
@@ -24,7 +58,7 @@ console.group(`%cOperador Aritmetico Decremento`,myStyle1);
           resultado:${resul}
           ` )
   
-  console.groupEnd(); 
+  console.groupEnd(); */ 
 
 /* OPERADOR ARITMETICO INCREMENTO 
 
