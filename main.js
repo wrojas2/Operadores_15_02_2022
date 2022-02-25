@@ -1,10 +1,40 @@
-/*OPERADOR DE COMPARACION IGUALDAD*/
+/* OPERADOR DE COMPARACION DIFERENTE */
+let myStyle1 = `
+color:#F2F3F4;
+background:#A569BD;
+padding: 15px;
+border-radius: 15px;`
+
+console.group(`%cOPERADOR DE COMPARACION DIFERENTE '!='`,myStyle1);
+
+let x = 5*2;
+// RTA X => 10
+//
+let y = (5/5-(3+9) - (5%3)*2);
+//  (5/5-(12) -(5%3)*2);
+//  (5/5-(12) - (2) *2);
+//  (5/5- 12 - 4); 
+//  (1-12-4);
+//  (-11-4)
+//  RTA Y => -15
+let resultado = x != y;
+
+console.log(`x =x = 5*2`)
+console.log(`y = (5/5-(3+9)-(5%3)*2)`)
+console.log(`
+    El valor de la Variable x: ${x}  
+    El Valor de la variable y: ${y} 
+    ¿Son diferentes? '!=' ${resultado}`);
+
+console.groupEnd();
+
+/*OPERADOR DE COMPARACION IGUALDAD
 // Operador de Igualdad
 let x = 5+(2*2)-(6/2);
 let y = 5;
 
 let resultado = x == y;
-console.log(`Variable x: ${x} y: ${y} Resultado '==' ${resultado}`);
+console.log(`Variable x: ${x} y: ${y} Resultado '==' ${resultado}`); */
 
 /* EJERCICIO OPERACIONES   
 
