@@ -1,4 +1,5 @@
 /* EJERCICIO OPERACIONES   */
+
 let resultado;
 let myStyle1 = `
 color:#4D5656 ;
@@ -19,15 +20,17 @@ resultado  = 5*((4/4)*(9-7)*2)+6;
 // 9-7 = 2   => 5 * (1 * 2 * 2)+6
 // 1*2*2= 5  => 5 * 5 + 6
 // RTA:      => 26 
+
 console.log(`El resultado de 5*((4/4)*(9-7)*2)+6 es: ${resultado}`)
+
 resultado = 5+1*8+(9*(5+8)/2);
 // 5+8 =13    => 5+1*8+(9*13/2);
-// 13/2=6,5   => 5+1*8+(9*6,5);
-// 9*6,5=58,5 => 5+1*8+58,5
+// 9*13=117   => 5+1*8+(117/2);
+// 117/2=58,5 => 5+1*8+58,5
 // 1*8 = 8    => 5+8+58,5
 // Rta        =>  71,5
-console.log(`El resultado de 5+1*8+(9*(5+8)/2) es: ${resultado}`)
 
+console.log(`El resultado de 5+1*8+(9*(5+8)/2) es: ${resultado}`)
 console.groupEnd();
 
 
