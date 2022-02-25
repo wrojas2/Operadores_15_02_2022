@@ -1,4 +1,41 @@
-/* OPERADOR DE COMPARACION MENOR */
+/* OPERADOR DE COMPARACION MAYOR IGUAL */
+let myStyle1 = `
+color:#F2F3F4;
+background:#566573;
+padding: 15px;
+border-radius: 15px;`
+
+console.group(`%cOPERADOR DE COMPARACION MAYOR IGUAL '>='`,myStyle1);
+
+let x = 6;
+let y = 5;
+let resultado = x >= y;
+
+console.log(`
+    El valor de la Variable x: ${x}  
+    El Valor de la variable y: ${y} 
+    '>=', ¿X es mayor o igual que y ?  ${resultado}`);
+
+x = 5;
+y = 5;
+resultado = x >= y;
+
+console.log(`
+    El valor de la Variable x: ${x}  
+    El Valor de la variable y: ${y} 
+    '>=', ¿X es mayor o igual que y ?  ${resultado}`);
+
+x = 4;
+y = 5;
+resultado = x >= y;
+
+console.log(`
+    El valor de la Variable x: ${x}  
+    El Valor de la variable y: ${y} 
+    '>=', ¿X es mayor o igual que y ?  ${resultado}`);
+
+console.groupEnd(); 
+/* OPERADOR DE COMPARACION MENOR 
 let myStyle1 = `
 color:#F2F3F4;
 background:#2471A3;
@@ -32,9 +69,9 @@ console.log(`y = (8*5/(5+2)*3)%9`)
 console.log(`
     El valor de la Variable x: ${x}  
     El Valor de la variable y: ${y} 
-    '>', ¿X es menor que y ?  ${resultado}`);
+    '<', ¿X es menor que y ?  ${resultado}`);
 
-console.groupEnd();
+console.groupEnd(); */
 
 /* OPERADOR DE COMPARACION MAYOR 
 let myStyle1 = `
