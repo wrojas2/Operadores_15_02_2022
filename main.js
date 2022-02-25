@@ -1,4 +1,12 @@
-/* EJERCICIO OPERACIONES   */
+/*OPERADOR DE COMPARACION IGUALDAD*/
+// Operador de Igualdad
+let x = 5+(2*2)-(6/2);
+let y = 5;
+
+let resultado = x == y;
+console.log(`Variable x: ${x} y: ${y} Resultado '==' ${resultado}`);
+
+/* EJERCICIO OPERACIONES   
 
 let resultado;
 let myStyle1 = `
@@ -31,9 +39,7 @@ resultado = 5+1*8+(9*(5+8)/2);
 // Rta        =>  71,5
 
 console.log(`El resultado de 5+1*8+(9*(5+8)/2) es: ${resultado}`)
-console.groupEnd();
-
-
+console.groupEnd(); */
 
 /* OPERADOR ARITMETICO DECREMENTO 
 
