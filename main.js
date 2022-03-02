@@ -1,4 +1,53 @@
-/* OPERADOR DE COMPARACION MAYOR IGUAL */
+/* BOLEANOS ASIMILABLES */
+
+let validar = data =>{
+    if(data) return "true";
+    else return "false"
+
+
+}
+
+// Boleanos en objetos, array, arrayAsc
+//  SI existe algo en el array es TRUE, 
+// datos ["nombre"]="William" // array de forma asociativa
+// console.log(datos);
+// console.log(datos.length);   // Valor 0
+// console.log(Object.entries(datos).length); // Valor 1
+// console.log(Object.entries(datos)); // Valor 2, se recomienda usar este
+// // Dependiendo del valor que se utilice en el codndicional devolvera TRUE o FALSE
+// if (datos.length){
+//     console.log("TRUE ARRAY");
+// }
+// else{
+//     console.log ("FALSE ARRAY");
+
+// }
+let dato = ["WILLIAM"];
+console.log("Boleanos objetos, arrays, arrayAsc", validar (Object.entries(dato).length));
+
+// Boleanos en number
+// //cualquier numero diferente de 0 es true, 0 es false
+// if(-1)
+//  {
+//    console.log("TRUE NUMBER");
+//  }
+// else 
+//  {
+//    console.log("FALSE NUMBER");
+//  }
+console.log("Boleanos Number", validar(0));
+
+//  Boleanos en String
+// "" = si es vacio es false, 
+// "." = si contiene cualquier caracter es true
+// if(""){
+//     console.log("TRUE STRING");
+// }else{
+//     console.log("FALSE STRING");
+// }
+console.log("Boleanos en string", validar(" "));
+
+/* OPERADOR DE COMPARACION MAYOR IGUAL 
 let myStyle1 = `
 color:#F2F3F4;
 background:#566573;
@@ -34,7 +83,8 @@ console.log(`
     El Valor de la variable y: ${y} 
     '>=', ¿X es mayor o igual que y ?  ${resultado}`);
 
-console.groupEnd(); 
+console.groupEnd(); */
+
 /* OPERADOR DE COMPARACION MENOR 
 let myStyle1 = `
 color:#F2F3F4;
