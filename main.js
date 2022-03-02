@@ -1,4 +1,20 @@
-/* BOLEANOS ASIMILABLES */
+
+/* OPERADOR SI &&
+
+let resultado = (2*8) == 16 && 7>=8%1;
+//  16 == 16 && 7>=0; 
+//  true && true
+//      true
+console.log(resultado)
+
+let resultado1 = (2*8) != 16 && Object.entries(" ").length + (8%1);
+//               16  != 16 && true + 0   
+//                 false  &&  1
+//                     false
+console.log(resultado1);  */
+
+
+/* BOLEANOS ASIMILABLES 
 
 let validar = data =>{
     if(data) return "true";
@@ -45,7 +61,7 @@ console.log("Boleanos Number", validar(0));
 // }else{
 //     console.log("FALSE STRING");
 // }
-console.log("Boleanos en string", validar(" "));
+console.log("Boleanos en string", validar(" ")); */
 
 /* OPERADOR DE COMPARACION MAYOR IGUAL 
 let myStyle1 = `
