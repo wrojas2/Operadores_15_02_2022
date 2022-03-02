@@ -1,5 +1,15 @@
 
-/* OPERADOR SI &&
+/* OPERADOR OR || */
+// cuando una condicion sea verdadera, el resultado sera TRUE
+// Solo será false, cuando las dos condiciones sean false.
+let resultado = true || false ; 
+console.log(resultado)
+
+resultado = false || false ; 
+console.log(resultado)
+
+
+/* OPERADOR AND &&
 
 let resultado = (2*8) == 16 && 7>=8%1;
 //  16 == 16 && 7>=0; 
@@ -12,7 +22,6 @@ let resultado1 = (2*8) != 16 && Object.entries(" ").length + (8%1);
 //                 false  &&  1
 //                     false
 console.log(resultado1);  */
-
 
 /* BOLEANOS ASIMILABLES 
 
