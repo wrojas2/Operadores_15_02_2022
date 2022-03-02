@@ -1,13 +1,34 @@
+/* OPERADORE LOGICOS EJERCICIO  */
 
-/* OPERADOR OR || */
+let a = true;
+let b = false;
+let validar = function(id, ope){
+    document.querySelector(id).insertAdjacentHTML("beforeend", `
+    <tr>
+        <td>${a}</td>
+        <td>${b}</td>
+        <td>${
+            (ope == "&") ? a && b
+            : (ope == "|") ? a || b 
+            : (ope == "!") ? !a  
+            : ""
+            } 
+        </td>
+    </tr>
+    `);
+}
+validar("#OperadorAND","&");
+validar("#OperadorOR","|");
+validar("#OperadorNOT","!");
+
+/* OPERADOR OR || 
 // cuando una condicion sea verdadera, el resultado sera TRUE
 // Solo será false, cuando las dos condiciones sean false.
 let resultado = true || false ; 
 console.log(resultado)
 
 resultado = false || false ; 
-console.log(resultado)
-
+console.log(resultado) */
 
 /* OPERADOR AND &&
 
