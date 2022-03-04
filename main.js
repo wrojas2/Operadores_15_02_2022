@@ -1,25 +1,69 @@
 /* OPERADORE LOGICOS EJERCICIO  */
 
-let a = true;
+let a = false;
 let b = false;
 let validar = function(id, ope){
-    document.querySelector(id).insertAdjacentHTML("beforeend", `
-    <tr>
-        <td>${a}</td>
-        <td>${b}</td>
-        <td>${
-            (ope == "&") ? a && b
-            : (ope == "|") ? a || b 
-            : (ope == "!") ? !a  
-            : ""
-            } 
-        </td>
-    </tr>
-    `);
-}
-validar("#OperadorAND","&");
-validar("#OperadorOR","|");
-validar("#OperadorNOT","!");
+    document.querySelector(id).insertAdjacentHTML("beforeend",
+     // DISEÑO INICIAl 01/03/2022 WROJAS va entre los `  `
+        // <tr> 
+        //     <td>${a}</td>
+        //     <td>${b}</td>
+        //     <td>${
+        //         (ope == "&") ? a && b
+        //         : (ope == "|") ? a || b 
+        //         : (ope == "!") ? !a  
+        //         : ""
+        //         } 
+        //     </td>
+        // </tr> 
+
+    // DISEÑO DEL PROFE 03-03-2022 entre los ` `
+    `
+            <tr>
+            <td>${a}</td>
+            ${(ope != "!") ? `<td>${b}</td>` : ""}
+            <td>${
+                (ope == "&") ? a && b 
+                : (ope == "|") ? a || b                 
+                : (ope == "!") ? !a
+                : ""
+            }</td>
+        </tr>
+        <tr>
+            ${(ope != "!") ? `<td>${a}</td><td>${!b}</td>` : `<td>${!a}</td>`}
+            <td>${
+                (ope == "&") ? a && !b 
+                : (ope == "|") ? a || !b                 
+                : (ope == "!") ? !!a
+                : ""
+            }</td>
+        </tr>
+        <tr>
+            ${(ope != "!") ? `<td>${!a}</td><td>${b}</td>` : ""}
+            ${
+                (ope == "&") ? `<td>${!a && b}</td>` 
+                : (ope == "|") ? `<td>${!a || b}</td>`                 
+                : ""
+            }
+        </tr>
+        <tr>
+            ${(ope != "!") ? `<td>${!a}</td><td>${!b}</td>` : ""}
+            ${
+                (ope == "&") ? `<td>${!a && !b}</td>` 
+                : (ope == "|") ? `<td>${!a || !b}</td>`                 
+                : ""
+            }
+        </tr>       
+    `
+    );
+};
+        
+validar("#OperadorAND", "&");
+validar("#OperadorOR", "|");
+validar("#OperadorNOT", "!");
+
+
+
 
 /* OPERADOR OR || 
 // cuando una condicion sea verdadera, el resultado sera TRUE
